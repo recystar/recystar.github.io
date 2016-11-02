@@ -4,7 +4,7 @@
 		font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 		font-size: 62.5%;
 		background-color: white;
-		background: rgba(0,0,0,0) url("../img/2.jpg") no-repeat fixed center center / cover;
+		background: rgba(0,0,0,0) url("../img/2.jpg") repeat-y fixed center center / cover;
 		filter: grayscale(30%);
 		}
 		a {
