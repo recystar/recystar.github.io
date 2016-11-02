@@ -4,7 +4,7 @@
 		font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 		font-size: 62.5%;
 		background-color: white;
-		background: rgba(0,0,0,0) url("../img/2.jpg") repeat-y fixed center center / cover;
+		background: rgba(0,0,0,0) url("../img/2.jpg") no-repeat scroll center center / cover;
 		filter: grayscale(30%);
 		}
 		a {
@@ -62,6 +62,14 @@
 			width: 20%;
 			float: left;
 		}
+        .content {
+            float: right;
+            width: 80%;
+            height: auto;
+            min-height: 1080px;
+            overflow: auto;
+            padding-top:25px;
+        }
 		@media screen and (max-width:768px)  {
 			#nav {
 				padding-top: 0;
@@ -74,14 +82,14 @@
 				display: inline-block;
 				margin: 0 20px;
 			}
+            .content {
+                width: 90%;
+                height: auto;
+                margin:0 auto;
+            }
 		}
 
-		.content {
-			float: right;
-			width: 80%;
-			height: auto;
-			min-height: 600px;
-		}
+
 /*footer*/
 		#footer {
 			width: 99%;
