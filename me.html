@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>resume</title>
+    <link rel="stylesheet" href="css/cssreset-min.css">
     <style>
         table {
             border:1px solid black;
             width: 100%;
             height: 1000px;
         }
-        body {
-            margin:0;
-            padding: 0;
-        }
+
         #print {
             width: 100px;
             height: 40px;
@@ -32,21 +30,24 @@
             box-shadow: 1px 1px 1px #333;
         }
         #downDoc {
-            display: block;
+            display: inline-block;
             width: 100px;
             height: 40px;
             border: 1px solid red;
-            color: red;
             background: -moz-linear-gradient(#999,#ccc);
             background: -webkit-linear-gradient(#999,#ccc);
             background: -o-linear-gradient(#999,#ccc);
             background: -ms-linear-gradient(#999,#ccc);
             margin-bottom: 10px;
-            text-decoration: none;
+            text-align: center;
         }
         #downDoc:hover {
             background: white;
             box-shadow: 1px 1px 1px #333;
+        }
+        #downDoc a {
+            text-decoration: none;
+            color: red;
         }
     </style>
 
@@ -56,7 +57,7 @@
 </head>
 <body>
 <button id="print" onclick="print()">打印</button>
-<a id="downDoc" href="http://recystar.com/resume.doc" download="resume.doc">下载</a>
+<button id="downDoc"><a href="http://recystar.com/resume.doc" download="resume.doc">下载</a></button>
 <table>
     <tr>
         <td>姓名</td>
