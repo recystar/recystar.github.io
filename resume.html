@@ -37,6 +37,7 @@
 		#print:hover {
 			background: white;
 			box-shadow: 1px 1px 1px #333;
+			cursor: pointer;
 		}
 		#downDoc {
 			display: inline-block;
@@ -53,10 +54,12 @@
 		#downDoc:hover {
 			background: white;
 			box-shadow: 1px 1px 1px #333;
+			cursor: pointer;
 		}
 		#downDoc a {
 			text-decoration: none;
 			color: red;
+			display: block;
 		}
 		/*打印及下载end*/
 	</style>
@@ -83,7 +86,7 @@
 		</nav>
 		<div class="content">
 			<button id="print" onclick="prt()">打印</button>
-			<button id="downDoc" onclick="down()"><a href="http://recystar.com/resume/周炎达的个人简历.doc" download="resume.doc">下载</a></button>
+			<button id="downDoc" onclick="down()"><a href="http://recystar.com/周炎达的个人简历.doc" download="resume.doc">下载</a></button>
 			<iframe src="me.html" frameborder="1"></iframe>
 		</div>	
 	</div>
