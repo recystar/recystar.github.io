@@ -5,48 +5,20 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>resume</title>
+    <link rel="stylesheet" href="css/cssreset-min.css">
     <style>
+        html {
+            background: transparent;
+        }
+        html,body {
+            width: 100%;
+        }
         table {
             border:1px solid black;
             width: 100%;
+            margin:0 auto;
             height: 1000px;
-        }
-
-        #print {
-            width: 100px;
-            height: 40px;
-            border: 1px solid red;
-            color: red;
-            background: -moz-linear-gradient(#999,#ccc);
-            background: -webkit-linear-gradient(#999,#ccc);
-            background: -o-linear-gradient(#999,#ccc);
-            background: -ms-linear-gradient(#999,#ccc);
-            margin-bottom: 10px;
-        }
-
-        #print:hover {
-            background: white;
-            box-shadow: 1px 1px 1px #333;
-        }
-        #downDoc {
-            display: inline-block;
-            width: 100px;
-            height: 40px;
-            border: 1px solid red;
-            background: -moz-linear-gradient(#999,#ccc);
-            background: -webkit-linear-gradient(#999,#ccc);
-            background: -o-linear-gradient(#999,#ccc);
-            background: -ms-linear-gradient(#999,#ccc);
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        #downDoc:hover {
-            background: white;
-            box-shadow: 1px 1px 1px #333;
-        }
-        #downDoc a {
-            text-decoration: none;
-            color: red;
+            padding: 0;
         }
     </style>
 
@@ -55,8 +27,7 @@
 
 </head>
 <body>
-<button id="print" onclick="print()">打印</button>
-<button id="downDoc"><a href="http://recystar.com/resume.doc" download="resume.doc">下载</a></button>
+
 <table>
     <tr>
         <td>姓名</td>

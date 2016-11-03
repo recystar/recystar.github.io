@@ -68,7 +68,7 @@
             height: auto;
             min-height: 1080px;
             overflow: auto;
-            padding-top:25px;
+            padding:25px 0 0 0;
         }
 		@media screen and (max-width:768px)  {
 			#nav {
