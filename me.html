@@ -20,7 +20,48 @@
             height: 1000px;
             padding: 0;
         }
+        tr,td {
+            border:1px solid #555;
+        }
+        img {
+            margin:0;
+            padding:0;
+        }
     </style>
+    <script>
+
+        /*将伪数组转换成数组start------------------*/
+        function makeArray(obj){
+            var rs=[],len=obj.length;
+            try{
+                rs = [].slice.call(obj,0);
+            }catch(e){//for IE  
+                for(var i=0;j=obj[i++];){
+                    rs.push(j);
+                }
+            }
+            return rs;
+        }
+        /*将伪数组转换成数组end------------------*/
+
+
+        window.onload=function () {
+            function bgColor() {
+                var trs=document.getElementsByTagName("tr");
+
+                for(var i=0; i<trs.length;i++){
+                    for(var j=0;j<4;j++){
+                        if(j%2==0&&trs[j]){
+                            trs[i].getElementsByTagName("td")[j].style.backgroundColor="red";
+                        }
+                    }
+
+
+                }
+            }
+            bgColor();
+        }
+    </script>
 
 
 
@@ -35,7 +76,7 @@
         <td>英文名</td>
         <td></td>
         <td rowspan="5">
-            <img  style="width: 120px;height: 160px;" src="img/1.jpg" alt="照片">
+
         </td>
     </tr>
     <tr>
