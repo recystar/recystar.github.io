@@ -18,19 +18,21 @@
 			color: #555;
 			font-weight: bold;
 		}
-		section ul {
+		.content section ul {
 			width: 100%;
 			font-size: 1.2rem;
 			line-height: 180%;
 		}
-
-		section li {
+		.content section p {
+			font-size: 1rem;
+		}
+		.content section li {
 			width:  45%;
 			text-indent: 2rem;
 			display: inline-block;
 		}
 		@media screen and (max-width:500px)  {
-			section li {
+			.content section li {
 				width: 300px;
 			}
 		}
@@ -52,8 +54,9 @@
 		</nav>
 		<div class="content">
 			<section>
-				<h3>基于jQuery组件库（PC端）</h3>
+				<h3>前端常用组件</h3>
 				<ul>
+					<p>--------基于jquery组件（PC端）---------</p>
 					<li><a href="jquery-slider/slider.html" target="_blank">轮播</a></li>
 					<li><a href="jquery-scrollbar/scrollbar.html" target="_blank">滚动条</a></li>
 					<li><a href="jquery-range/range.html" target="_blank">滑动条</a></li>
@@ -71,9 +74,13 @@
 					<li><a href="jquery-inputFormat/inputFormat.html" target="_blank">格式化输入框</a></li>
 					<li><a href="jquery-slider/fullpage.html" target="_blank">全屏滚动</a></li>
 					<li><a href="jquery-calendar/calendar2.html" target="_blank">滑动日历（基于轮播）</a></li>
+					<p>---------附带zepto轮播---------</p>
+					<li><a href="zepto-slider/slider.html">zepto轮播</a></li>
+					<p>---------其他----------</p>
+					<li><a href="browser.html">浏览器信息检测</a></li>
+					<li><a href="icon.html">纯css图标</a></li>
 				</ul>
 			</section>
-
 		</div>	
 	</div>
 	<div id="footer">
