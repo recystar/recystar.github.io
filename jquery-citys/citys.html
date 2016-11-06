@@ -130,7 +130,7 @@ $('#demo2').citys({
         			$town.hide().empty();
         			if(info['code']%1e4&&info['code']<7e5){	//是否为“区”且不是港澳台地区
         				$.ajax({
-        					url:'http://passer-by.com/data_location/town/'+info['code']+'.json',
+        					url:'http://recystar.com/jquery-citys/town/'+info['code']+'.json',
         					dataType:'json',
         					success:function(town){
         						$town.show();
@@ -172,8 +172,7 @@ $('#demo2').citys({
                             <td>dataUrl</td>
                             <td>[数据库地址]</td>
                             <td>
-                              <p>最新数据库（2016年9月）：<a href="http://passer-by.com/data_location/list.json" target="_blank">JSON格式</a><a href="http://passer-by.com/data_location/list.jsonp" target="_blank">JSONP格式</a></p>
-                              <p>数据库项目：<a href="https://github.com/mumuy/data_location" target="_blank">中国行政区划（省、市、区、街道）</a></p>
+                              <p>数据库：<a href="http://recystar.com/jquery-citys/list.json" target="_blank">JSON格式</a><a href="http://recystar.com/jquery-citys/list.json" target="_blank">JSONP格式</a></p>
                             </td>
                         </tr>
                         <tr>

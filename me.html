@@ -30,36 +30,10 @@
     </style>
     <script>
 
-        /*将伪数组转换成数组start------------------*/
-        function makeArray(obj){
-            var rs=[],len=obj.length;
-            try{
-                rs = [].slice.call(obj,0);
-            }catch(e){//for IE  
-                for(var i=0;j=obj[i++];){
-                    rs.push(j);
-                }
-            }
-            return rs;
-        }
-        /*将伪数组转换成数组end------------------*/
 
 
         window.onload=function () {
-            function bgColor() {
-                var trs=document.getElementsByTagName("tr");
 
-                for(var i=0; i<trs.length;i++){
-                    for(var j=0;j<4;j++){
-                        if(j%2==0&&trs[j]){
-                            trs[i].getElementsByTagName("td")[j].style.backgroundColor="red";
-                        }
-                    }
-
-
-                }
-            }
-            bgColor();
         }
     </script>
 
@@ -75,9 +49,7 @@
         <td>周炎达</td>
         <td>英文名</td>
         <td></td>
-        <td rowspan="5">
 
-        </td>
     </tr>
     <tr>
         <td>民族</td>
@@ -105,33 +77,33 @@
     </tr>
     <tr>
         <td>毕业学校</td>
-        <td colspan="2">湖北工业大学工程技术学院</td>
+        <td>湖北工业大学工程技术学院</td>
         <td>婚姻状况</td>
         <td>未婚</td>
     </tr>
     <tr>
         <td>求职意向</td>
-        <td colspan="2">前端开发</td>
+        <td>前端开发</td>
         <td>目前状态</td>
         <td>离职</td>
     </tr>
     <tr>
         <td>联系电话</td>
         <td>18627986935</td>
-        <td colspan="2">邮箱</td>
+        <td>邮箱</td>
         <td>zhouydcn@163.com</td>
     </tr>
     <tr>
         <td>github</td>
-        <td colspan="4">jquery</td>
+        <td colspan="3">jquery</td>
     </tr>
     <tr>
         <td>外语能力</td>
-        <td colspan="4">大学英语：CET-4</td>
+        <td colspan="3">大学英语：CET-4</td>
     </tr>
     <tr>
         <td>专业技能</td>
-        <td colspan="4">
+        <td colspan="3">
             <p>1.掌握JavaScript语言。</p>
             <p>2.熟练运用Photoshop、Sublime text、Atom、Chrome等常用网页设计制作软件</p>
             <p>3.精通HTML+CSS网页布局与样式，了解HTML5与CSS3.0。</p>
@@ -141,14 +113,14 @@
     </tr>
     <tr>
         <td>工作经历</td>
-        <td colspan="4">
+        <td colspan="3">
             <p>1</p>
             <p>2...</p>
         </td>
     </tr>
     <tr>
         <td>教育经历</td>
-        <td colspan="4">
+        <td colspan="3">
             <p>1</p>
             <p>2</p>
             <p>3...</p>
@@ -156,7 +128,7 @@
     </tr>
     <tr>
         <td>获得证书</td>
-        <td colspan="4">CET-4</td>
+        <td colspan="3">CET-4</td>
     </tr>
 </table>
 </body>
